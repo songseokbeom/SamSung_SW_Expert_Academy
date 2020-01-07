@@ -21,5 +21,8 @@
     <ClCompile Include="8821적고지우기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1824혁진이의 프로그램 검증.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
