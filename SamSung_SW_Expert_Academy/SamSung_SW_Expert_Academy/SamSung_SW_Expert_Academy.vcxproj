@@ -146,7 +146,10 @@
     <ClCompile Include="1824혁진이의 프로그램 검증.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="2819_격자판의_숫자_이어_붙이기.cpp" />
+    <ClCompile Include="2819_격자판의_숫자_이어_붙이기.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="3752_가능한_시험_점수.cpp" />
     <ClCompile Include="8821적고지우기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
