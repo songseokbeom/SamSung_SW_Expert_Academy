@@ -24,5 +24,8 @@
     <ClCompile Include="1824혁진이의 프로그램 검증.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2819_격자판의_숫자_이어_붙이기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
