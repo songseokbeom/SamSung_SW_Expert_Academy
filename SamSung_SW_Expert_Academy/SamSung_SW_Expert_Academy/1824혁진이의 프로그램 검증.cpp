@@ -44,21 +44,21 @@ void solve()
 
 	for (int i = 0; i < r; i++)
 		scanf("%s", inst[i]);
-	
+
 	deque<info> dq;
 	info a;
-	a.mem = 0, a.dir = 1, a.x = 0, a.y=0;
+	a.mem = 0, a.dir = 1, a.x = 0, a.y = 0;
 	dq.push_back(a);
 	check[0][0][0][1] = 1;
 
-	while(!dq.empty())
+	while (!dq.empty())
 	{
 		info g = dq.front();
 		dq.pop_front();
 
 		if (inst[g.x][g.y] == '<') g.dir = 3;
 		else if (inst[g.x][g.y] == '>') g.dir = 1;
-		else if (inst[g.x][g.y] == '^')	g.dir = 0;
+		else if (inst[g.x][g.y] == '^') g.dir = 0;
 		else if (inst[g.x][g.y] == 'v') g.dir = 2;
 		else if (inst[g.x][g.y] == '_')
 		{
@@ -76,7 +76,7 @@ void solve()
 			break;
 		}
 		else if ('0' <= inst[g.x][g.y] && inst[g.x][g.y] <= '9') g.mem = inst[g.x][g.y] - '0';
-		else if (inst[g.x][g.y] == '+') g.mem= (g.mem+1) % 16;
+		else if (inst[g.x][g.y] == '+') g.mem = (g.mem + 1) % 16;
 		else if (inst[g.x][g.y] == '-')
 		{
 			g.mem--;
@@ -95,7 +95,7 @@ void solve()
 				if (temp.y >= c) temp.y = 0;
 
 				if (check[temp.x][temp.y][temp.mem][temp.dir] == 1) continue;
-				else 
+				else
 				{
 					check[temp.x][temp.y][temp.mem][temp.dir] = 1;
 					dq.push_back(temp);
@@ -109,7 +109,7 @@ void solve()
 		if (g.x >= r) g.x = 0;
 		if (g.y < 0) g.y = c - 1;
 		if (g.y >= c) g.y = 0;
-		
+
 		if (check[g.x][g.y][g.mem][g.dir] == 1) continue;
 		else
 		{
